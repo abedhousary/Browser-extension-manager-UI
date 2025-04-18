@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+  </head>
+  <body class="light-mode">
+    <div class="header">
+      <div class="header-content">
+        <img src="./assets/images/logo.svg" class="logo" />
+        <div class="theme-switch">
+          <img
+            src="./assets/images/icon-moon.svg"
+            width="20px"
+            class="theme-toggler"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="title-area">
+      <div class="title">Extensions List</div>
+      <div class="pills-holder">
+        <div class="pill Active-pill" data-value="20">All</div>
+        <div class="pill" data-value="1">Active</div>
+        <div class="pill" data-value="0">Inactive</div>
+      </div>
+    </div>
+    <div class="extension-container"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
