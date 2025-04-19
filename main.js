@@ -133,3 +133,27 @@ themeToggler.addEventListener("click", function () {
 
 
 
+window.onload = () => {
+    fetch('./data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load JSON');
+            }
+            return response.json(); // parses JSON response into JS object
+        })
+        .then(data => {
+            data.forEach((e) => {
+                if (toShow != 20) {
+                    if (e.isActive = toShow) {
+                        addExtension(e.name, e.description, e.logo, e.isActive)
+                    }
+                } else {
+                    addExtension(e.name, e.description, e.logo, e.isActive)
+                }
+            })
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
+}
